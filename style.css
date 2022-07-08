@@ -87,7 +87,7 @@ header {
 }
 
 /* Second section */
-#presentation {
+#presentation-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +101,7 @@ header {
   background-size: cover;
 }
 
-#presentation h1 {
+#presentation-section h1 {
   font-family: "Hurricane", sans-serif;
   font-size: 10rem;
   font-weight: lighter;

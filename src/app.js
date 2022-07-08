@@ -1,8 +1,8 @@
-const header = document.getElementById("header");
-const navbar = document.querySelector("#navbar");
+const header = $("header");
+const navbar = document.getElementById("#navbar");
 const navbarLinks = document.querySelector(".navbar-buttons");
-const sections = document.querySelector(".sections");
-const links = document.querySelector(".menuButtons");
+const sections = $("section");
+const links = document.querySelectorAll(".menuButtons");
 
 const linkCurrentState = () => {
   const cur_pos = $(this).scrollTop();
@@ -11,13 +11,14 @@ const linkCurrentState = () => {
     const bottom = top + $(this).outerHeight();
     if (cur_pos >= top && cur_pos <= bottom) {
       header.find("a").removeClass("current");
-      let linkName = $(this).attr("id");
+      let linkName = $(this).attr("class");
       linkName = linkName.slice(0, linkName.length - 8);
       header.find(`a[data-page= ${linkName}]`).addClass("current");
     }
   });
 };
 
+//Scroll page on click
 $(".menuButtons").on("click", function (e) {
   e.preventDefault();
   const headerHeight =
@@ -25,18 +26,34 @@ $(".menuButtons").on("click", function (e) {
   const idName = $(this).attr("data-page");
   $("html, body").animate(
     {
-      scrollTop: $("#" + idName + "-section").offset().top - headerHeight,
+      scrollTop: $("#" + idName + "-section").offset(),
     },
     1200
   );
 });
 
+const navSlide = () => {
+  burger.addEventListener("click", () => {
+    // toggle nav
+    nav.classList.toggle("nav-active");
+    if (nav.classList.contains("nav-active")) {
+      nav.style.animation = `navSlide 0.5s forwards`;
+      $("body").addClass("navBar-open");
+    } else {
+      nav.style.animation = `navSlideOut 0.5s`;
+      $("body").removeClass("navBar-open");
+    }
+
+    // Animate links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navFade 0.5s ${index / 5 + 0.5}s ease forwards`;
+      }
+    });
+  });
+};
+
 window.addEventListener("load", linkCurrentState);
 window.addEventListener("scroll", linkCurrentState);
-labelTransform.forEach((input) =>
-  input.addEventListener("focus", () => moveUp(input))
-);
-labelTransform.forEach((input) =>
-  input.addEventListener("focusout", () => moveDown(input))
-);
-navSlide();
