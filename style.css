@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-section {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./img/main-page-cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brand-intro {
+  background-color: hsla(0, 0%, 100%, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 60%;
+  padding: 10rem;
+  border-radius: 10px;
+}
+
+.brand-intro h1 {
+  font-family: "Hurricane", cursive;
+  font-size: 10rem;
+  background: linear-gradient(to right, #ffffff, #ffd8a2, #c59a58);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.brand-intro h2 {
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+#presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(./img/presentation-cover.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#presentation h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 6rem;
+  font-weight: lighter;
+  padding: 7rem 0;
+  color: #fff;
+}
+
+.product-img {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 7rem;
+}
+
+.product-img img {
+  width: 20rem;
+}
+
+.agenda,
+.canvas,
+.bookmark {
+  background-color: rgba(255, 255, 255, 0.742);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.agenda h3 {
+  padding-top: 5rem;
+  font-family: "Mulish", sans-serif;
+  font-size: 2rem;
+}
+
+.canvas h3 {
+  padding-top: 5rem;
+  font-family: "Mulish", sans-serif;
+  font-size: 2rem;
+}
+
+.bookmark h3 {
+  padding-top: 5rem;
+  font-family: "Mulish", sans-serif;
+  font-size: 2rem;
+}
