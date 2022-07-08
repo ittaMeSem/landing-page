@@ -5,11 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Light by Art</title>
   </head>
   <body>
-    <section id="main-section">
+    <header id="header">
+      <ul id="navbar">
+        <li class="navbar-buttons">
+          <a href data-page="home" class="menuButtons"
+            ><i class="ph-house-thin"></i
+          ></a>
+        </li>
+
+        <li class="navbar-buttons">
+          <a href data-page="products" class="menuButtons"
+            ><i class="ph-shopping-bag-open-thin"></i
+          ></a>
+        </li>
+
+        <li class="navbar-buttons-export">
+          <a href="shop.html"><i class="ph-storefront-thin"></i></a>
+        </li>
+        <li class="navbar-buttons">
+          <a href data-page="gallery" class="menuButtons"
+            ><i class="ph-image-thin"></i
+          ></a>
+        </li>
+
+        <li class="navbar-buttons-export">
+          <a href="contact.html"><i class="ph-envelope-thin"></i></a>
+        </li>
+      </ul>
+    </header>
+    <section id="main-section" class="section">
       <div class="brand-intro">
         <h1>Light by Art</h1>
         <h2>
@@ -20,7 +49,7 @@
         </h2>
       </div>
     </section>
-    <section id="presentation">
+    <section id="presentation" class="section">
       <h1>Products</h1>
       <div class="product-img">
         <div class="agenda">
@@ -46,6 +75,6 @@
         </div>
       </div>
     </section>
-    <script src="app.js"></script>
+    <script src="./src/app.js"></script>
   </body>
 </html>
