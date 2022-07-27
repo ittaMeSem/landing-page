@@ -40,6 +40,7 @@ header {
   border-radius: 5px;
   text-decoration: none;
 }
+
 #navbar i {
   width: 3rem;
   font-size: 2rem;
@@ -61,14 +62,14 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(./img/main-page-cover.jpg);
+  background-image: url(./img/main-page-cover2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 /* Main section design */
 .brand-intro {
-  background-color: hsla(0, 0%, 100%, 0.15);
+  background-color: hsla(0, 0%, 100%, 0.531);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -80,7 +81,7 @@ header {
 .brand-intro h1 {
   font-family: "Hurricane", cursive;
   font-size: 10rem;
-  background: linear-gradient(to right, #ffb0b0, #bf86fc, #5fecff);
+  background: linear-gradient(to right, #ff8989, #ae62ff, #37e8ff);
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -89,10 +90,11 @@ header {
 }
 
 .brand-intro h2 {
-  color: #fff;
+  color: #000;
   font-family: "Mulish", sans-serif;
   font-weight: lighter;
   font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
 /* Second section */
